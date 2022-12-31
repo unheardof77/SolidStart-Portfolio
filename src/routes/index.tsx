@@ -1,31 +1,15 @@
-import { A } from "solid-start";
-import Counter from "~/components/Counter";
+import morgan from "../assets/images/Morgan.jpg";
 
 export default function Home() {
-  return (
-    <main class="text-center mx-auto text-gray-700 p-4">
-      <h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">
-        Hello world!
-      </h1>
-      <Counter />
-      <p class="mt-8">
-        Visit{" "}
-        <a
-          href="https://solidjs.com"
-          target="_blank"
-          class="text-sky-600 hover:underline"
-        >
-          solidjs.com
-        </a>{" "}
-        to learn how to build Solid apps.
-      </p>
-      <p class="my-4">
-        <span>Home</span>
-        {" - "}
-        <A href="/about" class="text-sky-600 hover:underline">
-          About Page
-        </A>{" "}
-      </p>
-    </main>
-  );
+	return(
+		<main class="flex justify-center items-center h-full">
+			<section class="flex">
+				<img class="rounded-full w-60" src={morgan} alt="Morgan Tolman next to a river."/>
+				<section>
+					<h1>Morgan Tolman</h1>
+					<p>lorem alskdjf ksdjf sdlkfj sd slkdfjsl fjsdfj slkdfj sdkfj sdkfj slkdjf aljsdfkj sdkf sdf jsd fsd fsljdf slkdj fslkdjf slkjfd sd jf</p>
+				</section>
+			</section>
+		</main>
+	)
 }
